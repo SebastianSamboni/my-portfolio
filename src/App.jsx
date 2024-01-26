@@ -8,21 +8,24 @@ import Education from './pages/Education';
 import Others from './pages/Others';
 import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
+import { Box, CssBaseline } from '@mui/material';
 
 function App() {
     return (
         <BrowserRouter>
-            <NavBar />
-            <Routes>
-                <Route path='/' element={<AboutMe />} />
-                <Route path='/about-me' element={<Navigate to='/' />} />
-                <Route path='/my-stack' element={<StackList />} />
-                <Route path='/projects' element={<Projects />} />
-                <Route path='/experience' element={<Experience />} />
-                <Route path='/education' element={<Education />} />
-                <Route path='/others' element={<Others />} />
-                <Route path='/contact' element={<Contact />} />
-            </Routes>
+            <Box sx={{ display: 'flex' }}>
+                <CssBaseline />
+                <NavBar />
+                <Box component="main" sx={{flexGrow: 1, p: 3}}>
+                    <AboutMe />
+                    <StackList />
+                    <Projects />
+                    <Experience />
+                    <Education />
+                    <Others />
+                    <Contact />
+                </Box>
+                </Box>
         </BrowserRouter>
     )
 }
