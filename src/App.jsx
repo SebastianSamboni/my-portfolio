@@ -7,10 +7,12 @@ import Experience from './pages/Experience';
 import Education from './pages/Education';
 import Others from './pages/Others';
 import Contact from './pages/Contact';
+import NavBar from './components/NavBar';
 
 function App() {
     return (
         <BrowserRouter>
+            <NavBar />
             <Routes>
                 <Route path='/' element={<AboutMe />} />
                 <Route path='/about-me' element={<Navigate to='/' />} />
