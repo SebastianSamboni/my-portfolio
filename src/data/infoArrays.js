@@ -1,3 +1,6 @@
+import ReactLogo from '../assets/react_logo.png'
+import ExpressLogo from '../assets/express_logo.svg'
+
 export const sections = [
     {
         id: 1,
@@ -19,5 +22,17 @@ export const sections = [
         id: 5,
         dir: '/contact',
         text_dir: 'Contacto'
+    }
+]
+
+export const skills = [
+    {
+        skillName: 'React',
+        skillLogo: ReactLogo,
+        percentage: 50
+    }, {
+        skillName: 'Express',
+        skillLogo: ExpressLogo,
+        percentage: 70
     }
 ]
