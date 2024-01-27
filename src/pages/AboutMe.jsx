@@ -1,6 +1,7 @@
 import { Grid, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import ProfileImg from '../assets/profile_img.jpeg'
+import { Link } from 'react-router-dom'
 
 const AboutMe = () => {
     const [currentText, setCurrentText] = useState(0)
@@ -10,10 +11,10 @@ const AboutMe = () => {
         'Diseñador amateur'
     ]
 
-    useEffect(() => {
+    useEffect(() => {        
         const interval = setInterval(() => {
             setCurrentText((oldValue) => (oldValue + 1) % titles.length)
-        }, 3000)
+        }, 2000)
 
         return () => {
             clearInterval(interval)
@@ -34,7 +35,7 @@ const AboutMe = () => {
                 <img src={ProfileImg} alt='profile_photo' style={{ width: '100px', height: '100px', borderRadius: '50%'}} />
             </Grid>
             <Typography variant='subtitle1'>
-                ¡Hola! Soy Juan Sebastián, desarrollador web y analista de 24 años apasionado por la creación de interfaces dinámicas y la robustez del back-end.
+                ¡Hola! Soy Juan Sebastián, desarrollador web y analista de 24 años apasionado por la creación de interfaces dinámicas y la robustez del back-end. <Link to='/my-stack'>Conoce más!</Link>
             </Typography>
         </Grid>
     )
