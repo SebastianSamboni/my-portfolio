@@ -36,11 +36,11 @@ const NavBar = () => {
             <List sx={{ marginTop: '100px'}}>
                 {sections.map(section => (
                     <ListItem key={section.id}>
-                        <ListItemButton>
-                            <Link to={section.dir}>
+                        <Link to={section.dir}>
+                            <ListItemButton>
                                 {section.text_dir}
-                            </Link>
-                        </ListItemButton>
+                            </ListItemButton>
+                        </Link>
                     </ListItem>
                 ))}
             </List>
