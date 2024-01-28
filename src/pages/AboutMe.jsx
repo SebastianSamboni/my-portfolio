@@ -35,7 +35,7 @@ const AboutMe = () => {
                 <img src={ProfileImg} alt='profile_photo' style={{ width: '100px', height: '100px', borderRadius: '50%'}} />
             </Grid>
             <Typography variant='subtitle1'>
-                ¡Hola! Soy Juan Sebastián, desarrollador web y analista de 24 años apasionado por la creación de interfaces dinámicas y la robustez del back-end. <Link to='/my-stack'>Conoce más!</Link>
+                ¡Hola! Soy Juan Sebastián, desarrollador web y analista de 24 años, apasionado por la creación de interfaces dinámicas y la robustez del back-end. <Link to='/my-stack'>Conoce más!</Link>
             </Typography>
         </Grid>
     )
