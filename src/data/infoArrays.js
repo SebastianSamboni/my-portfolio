@@ -79,7 +79,8 @@ export const jobs = [
             'Sequelize',
             'PostgreSQL'
         ],
-        url_site: 'dingo-shop.vercel.app',
-        git_url: 'https://github.com/Yefer1892/project-PeaxU'
+        url_site: 'http://dingo-shop.vercel.app',
+        git_url: 'https://github.com/Yefer1892/project-PeaxU',
+        img: 'https://res.cloudinary.com/dn6aqyrih/image/upload/v1706464999/projects/ncd7jfyg5wz7kdpo7myn.png'
     }
 ]
