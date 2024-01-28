@@ -8,7 +8,7 @@ const SkillItem = ({ skillName, skillLogo, percentage}) => {
         <Box textAlign='center' mb={3}>
             <CircularProgressbar
                 value={percentage}
-                text={`${percentage}`}
+                text={`${percentage}%`}
                 styles={{
                     root: { width: '80px' },
                     path: { stroke: '#007bff' },
@@ -20,8 +20,7 @@ const SkillItem = ({ skillName, skillLogo, percentage}) => {
                     alt={skillName}
                     style={{
                         width: '50px',
-                        height: '50px',
-                        borderRadius: '50%'
+                        height: '50px'
                     }}
                 />
                 <Typography variant='h6'

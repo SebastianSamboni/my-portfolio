@@ -1,5 +1,11 @@
-import ReactLogo from '../assets/react_logo.png'
+import JavascriptLogo from '../assets/javascript_logo.svg'
+import JavaLogo from '../assets/java_logo.svg'
+import ReactLogo from '../assets/react_logo.svg'
+import VueLogo from '../assets/vue_logo.svg'
 import ExpressLogo from '../assets/express_logo.svg'
+import NodeLogo from '../assets/node_logo.svg'
+import MongoLogo from '../assets/mongo_logo.svg'
+import PostgresLogo from '../assets/postgres_logo.svg'
 
 export const sections = [
     {
@@ -27,12 +33,36 @@ export const sections = [
 
 export const skills = [
     {
+        skillName: 'Javascript',
+        skillLogo: JavascriptLogo,
+        percentage: 60
+    }, {
+        skillName: 'Java',
+        skillLogo: JavaLogo,
+        percentage: 50
+    },{
         skillName: 'React',
         skillLogo: ReactLogo,
-        percentage: 50
+        percentage: 40
+    }, {
+        skillName: 'Vue',
+        skillLogo: VueLogo,
+        percentage: 20
+    }, {
+        skillName: 'Node',
+        skillLogo: NodeLogo,
+        percentage: 55
     }, {
         skillName: 'Express',
         skillLogo: ExpressLogo,
         percentage: 70
+    }, {
+        skillName: 'MongoDB',
+        skillLogo: MongoLogo,
+        percentage: 40
+    }, {
+        skillName: 'PostgreSQL',
+        skillLogo: PostgresLogo,
+        percentage: 50
     }
 ]
