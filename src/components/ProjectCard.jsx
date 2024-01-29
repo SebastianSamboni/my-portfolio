@@ -11,14 +11,14 @@ import {
 } from '@mui/material'
 import React from 'react'
 
-const ProjectCard = ({ name, description, type, stack, site, git, image }) => {
+const ProjectCard = ({ name, description, type, stack, url_site, git_url, img }) => {
 
     return (
         <Card sx={{ width: 400}}>
             <CardMedia
                 sx={{ height: 140 }}
                 component='img'
-                image={image}
+                image={img}
                 title={name}
             />
             <CardContent>
@@ -52,14 +52,14 @@ const ProjectCard = ({ name, description, type, stack, site, git, image }) => {
             </CardContent>
             <CardActions>
                 <Button size='small'
-                    href={site}
+                    href={url_site}
                     target='_blank'
                     rel='noopener noreferrer'
                 >
                     Visitar
                 </Button>
                 <Button size='small'
-                    href={git}
+                    href={git_url}
                     target='_blank'
                     rel='noopener noreferrer'
                 >

@@ -84,3 +84,36 @@ export const projects = [
         img: 'https://res.cloudinary.com/dn6aqyrih/image/upload/v1706464999/projects/ncd7jfyg5wz7kdpo7myn.png'
     }
 ]
+
+export const jobs = [
+    {
+        timeWorked: 'Octubre 2022 - Agosto 2023',
+        company: 'Mátrica Digital',
+        jobTitle: 'Analista y Líder Técnico',
+        responsabilities: [
+            'Análisis de estructuras de datos.',
+            'Manejo de bases de datos PL/SQL.',
+            'Revisar requerimientos funcionales y modelos operativos.',
+            'Realizar diagramas de componentes, secuencias y arquitectura de software.',
+            'Planificación de tiempos para la implementafción y despliegue en ambientes de QA y Producción.'
+        ]
+    }, {
+        timeWorked: 'Marzo 2018 - Septiembre 2018',
+        company: 'COMFACAUCA',
+        jobTitle: 'Analista pasante',
+        responsabilities: [
+            'Documentación de No conformidades.',
+            'Pruebas de caja blanca y caja negra.',
+            'Recolección de datos e información de diferentes áreas de la empresa.'
+        ] 
+    }, {
+        timeWorked: 'Octubre 2016 - Abril 2017',
+        company: 'Semillero SENNOVA SENA',
+        jobTitle: 'Analista Desarrollador',
+        responsabilities: [
+            'Recolección de Información.',
+            'Trabajo de campo.',
+            'Documentación inicial del proyecto.'
+        ]
+    }
+]
