@@ -5,6 +5,7 @@ import {
     CardContent,
     CardMedia,
     Chip,
+    Grid,
     Stack,
     Typography
 } from '@mui/material'
@@ -13,7 +14,7 @@ import React from 'react'
 const ProjectCard = ({ name, description, type, stack, site, git, image }) => {
 
     return (
-        <Card sx={{ maxWidth: 345}}>
+        <Card sx={{ width: 400}}>
             <CardMedia
                 sx={{ height: 140 }}
                 component='img'
@@ -21,9 +22,16 @@ const ProjectCard = ({ name, description, type, stack, site, git, image }) => {
                 title={name}
             />
             <CardContent>
-                <Typography gutterBottom variant='h5' component='div'>
-                    {name}
-                </Typography>
+                <Grid container spacing={12}>
+                    <Grid item xs={6}>
+                        <Typography gutterBottom variant='h5' component='div'>
+                            {name}
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Chip label={type} size='small' />
+                    </Grid>
+                </Grid>
                 <Typography variant='body2' color='text.secondary'>
                     {description}
                 </Typography>

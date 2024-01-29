@@ -67,7 +67,7 @@ export const skills = [
     }
 ]
 
-export const jobs = [
+export const projects = [
     {
         name: 'Dingo Shop',
         description: 'Aplicación Web dedicada al e-commerce de productos para mascotas.',
