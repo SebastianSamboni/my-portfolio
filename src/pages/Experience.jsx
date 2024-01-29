@@ -5,7 +5,7 @@ import InfoCard from '../components/InfoCard'
 
 const Experience = () => {
     return (
-        <Container>
+        <Container id='experience'>
             <Typography variant='h4' textAlign='center'>
                 Experiencia Laboral
             </Typography>
