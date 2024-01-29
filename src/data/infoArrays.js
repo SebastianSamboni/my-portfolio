@@ -72,7 +72,7 @@ export const jobs = [
         name: 'Dingo Shop',
         description: 'Aplicación Web dedicada al e-commerce de productos para mascotas.',
         type: 'Bootcamp Project',
-        technologies: [
+        stack: [
             'React',
             'NodeJS',
             'Express',

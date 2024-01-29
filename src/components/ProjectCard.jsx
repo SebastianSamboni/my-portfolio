@@ -4,11 +4,13 @@ import {
     CardActions,
     CardContent,
     CardMedia,
+    Chip,
+    Stack,
     Typography
 } from '@mui/material'
 import React from 'react'
 
-const ProjectCard = ({ name, description, type, site, git, image }) => {
+const ProjectCard = ({ name, description, type, stack, site, git, image }) => {
 
     return (
         <Card sx={{ maxWidth: 345}}>
@@ -25,10 +27,36 @@ const ProjectCard = ({ name, description, type, site, git, image }) => {
                 <Typography variant='body2' color='text.secondary'>
                     {description}
                 </Typography>
+                <Stack spacing={1}
+                    direction='row'
+                    sx={{
+                        display: 'flex',
+                        flexWrap: 'wrap'
+                    }}
+                >
+                    {stack.map((element, index) => (
+                        <Chip label={element}
+                            key={index}
+                            size='small'
+                        />
+                    ))}
+                </Stack>
             </CardContent>
             <CardActions>
-                <Button size='small' href={site} target='_blank' rel='noopener noreferrer'>Visitar</Button>
-                <Button size='small' href={git} target='_blank' rel='noopener noreferrer'>GitHub</Button>
+                <Button size='small'
+                    href={site}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    Visitar
+                </Button>
+                <Button size='small'
+                    href={git}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    GitHub
+                </Button>
             </CardActions>
         </Card>
     )

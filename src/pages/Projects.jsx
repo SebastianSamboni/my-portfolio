@@ -15,6 +15,7 @@ const Projects = () => {
                         <ProjectCard
                             name={job.name}
                             description={job.description}
+                            stack={job.stack}
                             site={job.url_site}
                             git={job.git_url}
                             image={job.img}
