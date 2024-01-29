@@ -18,8 +18,8 @@ const InfoCard = ({ timeWorked, company, jobTitle, responsabilities, index }) =>
                 <Typography variant='subtitle1'>{company}</Typography>
                 <Typography variant='body2'>
                     <ul>
-                        {responsabilities.map((responsability, index) => (
-                            <li key={index}>{responsability}</li>
+                        {responsabilities.map((responsability, id) => (
+                            <li key={id}>{responsability}</li>
                         ))}
                     </ul>
                 </Typography>

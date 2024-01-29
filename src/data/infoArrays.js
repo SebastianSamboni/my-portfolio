@@ -90,7 +90,7 @@ export const jobs = [
         timeWorked: 'Octubre 2022 - Agosto 2023',
         company: 'Mátrica Digital',
         jobTitle: 'Analista y Líder Técnico',
-        responsibilities: [
+        responsabilities: [
             'Análisis de estructuras de datos.',
             'Manejo de bases de datos PL/SQL.',
             'Revisar requerimientos funcionales y modelos operativos.',
@@ -101,7 +101,7 @@ export const jobs = [
         timeWorked: 'Marzo 2018 - Septiembre 2018',
         company: 'COMFACAUCA',
         jobTitle: 'Analista pasante',
-        responsibilities: [
+        responsabilities: [
             'Documentación de No conformidades.',
             'Pruebas de caja blanca y caja negra.',
             'Recolección de datos e información de diferentes áreas de la empresa.'
@@ -110,7 +110,7 @@ export const jobs = [
         timeWorked: 'Octubre 2016 - Abril 2017',
         company: 'Semillero SENNOVA SENA',
         jobTitle: 'Analista Desarrollador',
-        responsibilities: [
+        responsabilities: [
             'Recolección de Información.',
             'Trabajo de campo.',
             'Documentación inicial del proyecto.'
