@@ -6,6 +6,7 @@ import {
     TextareaAutosize,
     Typography
 } from '@mui/material'
+import { GitHub, LinkedIn } from '@mui/icons-material'
 import React from 'react'
 
 const Contact = () => {
@@ -18,7 +19,7 @@ const Contact = () => {
     }
 
     const handleSubmit = e => {
-        e.preventDefault()
+        // e.preventDefault()
         clearForm()
     }
 
@@ -69,6 +70,7 @@ const Contact = () => {
                     </Grid>
                     <Grid item md={12}>
                         <TextareaAutosize
+                            id='description'
                             minRows={3}
                             name='description'
                             maxRows={10}
@@ -87,6 +89,18 @@ const Contact = () => {
                     </Grid>
                 </Grid>
             </form>
+            <Grid>
+                <Grid item spacing={2} md={12} textAlign='center'>
+                    <Button startIcon={<GitHub style={{ fontSize: 35 }}/>} 
+                        href='https://github.com/SebastianSamboni' 
+                        target='_blank' 
+                    />
+                    <Button startIcon={<LinkedIn style={{ fontSize: 35 }}/>} 
+                        href='https://www.linkedin.com/in/jssn1808/' 
+                        target='_blank' 
+                    />
+                </Grid>
+            </Grid>
         </Container>
     )
 }
