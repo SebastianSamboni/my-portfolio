@@ -67,19 +67,20 @@ export const skills = [
     }
 ]
 
-export const jobs = [
+export const projects = [
     {
         name: 'Dingo Shop',
         description: 'Aplicación Web dedicada al e-commerce de productos para mascotas.',
         type: 'Bootcamp Project',
-        technologies: [
+        stack: [
             'React',
             'NodeJS',
             'Express',
             'Sequelize',
             'PostgreSQL'
         ],
-        url_site: 'dingo-shop.vercel.app',
-        git_url: 'https://github.com/Yefer1892/project-PeaxU'
+        url_site: 'http://dingo-shop.vercel.app',
+        git_url: 'https://github.com/Yefer1892/project-PeaxU',
+        img: 'https://res.cloudinary.com/dn6aqyrih/image/upload/v1706464999/projects/ncd7jfyg5wz7kdpo7myn.png'
     }
 ]
