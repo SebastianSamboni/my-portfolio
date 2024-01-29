@@ -24,7 +24,7 @@ const Contact = () => {
     }
 
     return (
-        <Container>
+        <Container id='contact'>
             <Typography variant='h4' textAlign='center'>
                 Ponte en Contacto!
             </Typography>

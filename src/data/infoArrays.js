@@ -9,24 +9,19 @@ import PostgresLogo from '../assets/postgres_logo.svg'
 
 export const sections = [
     {
-        id: 1,
-        dir: '/',
+        id: 'about-me',
         text_dir: 'Sobre Mí'
     }, {
-        id: 2,
-        dir: '/my-stack',
+        id: 'my-stack',
         text_dir: 'Mi Stack'
     }, {
-        id: 3,
-        dir: '/projects',
+        id: 'projects',
         text_dir: 'Proyectos'
     }, {
-        id: 4,
-        dir: '/experience',
+        id: 'experience',
         text_dir: 'Experiencia'
     }, {
-        id: 5,
-        dir: '/contact',
+        id: 'contact',
         text_dir: 'Contacto'
     }
 ]

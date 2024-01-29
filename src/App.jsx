@@ -1,5 +1,4 @@
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
 import AboutMe from './pages/AboutMe'
 import StackList from './pages/StackList'
 import Projects from './pages/Projects'
@@ -12,22 +11,20 @@ import { Container } from '@mui/system'
 
 function App() {
     return (
-        <BrowserRouter>
-            <Box sx={{ display: 'flex' }}>
-                <CssBaseline />
-                <NavBar />
-                <Box component="main" sx={{ flexGrow: 1, p: 6 }}>
-                    <Container>
-                        <AboutMe />
-                        <StackList />
-                        <Projects />
-                        <Experience />
-                        <Contact />
-                        <Footer />
-                    </Container>
-                </Box>
+        <Box sx={{ display: 'flex' }}>
+            <CssBaseline />
+            <NavBar />
+            <Box component="main" sx={{ flexGrow: 1, p: 6 }}>
+                <Container>
+                    <AboutMe />
+                    <StackList />
+                    <Projects />
+                    <Experience />
+                    <Contact />
+                    <Footer />
+                </Container>
             </Box>
-        </BrowserRouter>
+        </Box>
     )
 }
 

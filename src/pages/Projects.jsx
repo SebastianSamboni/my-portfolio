@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard'
 
 const Projects = () => {
     return (
-        <Container>
+        <Container id='projects'>
             <Typography variant='h4' textAlign='center'>
                 Mi Stack de Tecnologías
             </Typography>

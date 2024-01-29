@@ -5,7 +5,7 @@ import { Container, Grid, Typography } from '@mui/material'
 
 const StackList = () => {
     return (
-        <Container>
+        <Container id='my-stack'>
             <Typography variant='h4' textAlign='center'>
                 Mi Stack de Tecnologías
             </Typography>
