@@ -21,7 +21,9 @@ const NavBar = () => {
                 flexShrink: 0,
                 '& .MuiDrawer-paper': {
                     width: drawerWidth,
-                    boxSizing: 'border-box'
+                    boxSizing: 'border-box',
+                    backgroundColor: '#009688',
+                    color: '#fff'
                 }
             }}
             variant='permanent'

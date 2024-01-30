@@ -26,7 +26,7 @@ const Contact = () => {
     return (
         <Container id='contact'>
             <Typography variant='h4' textAlign='center'>
-                Ponte en Contacto!
+                ¡Ponte en Contacto!
             </Typography>
             <form method='POST'
                 action='https://formspree.io/f/xayrqkbr'
@@ -74,7 +74,7 @@ const Contact = () => {
                             minRows={3}
                             name='description'
                             maxRows={10}
-                            placeholder='Escribe tu pregunta!'
+                            placeholder='Escribe tu pregunta'
                             style={{ resize: 'none', width: '100%', height: '150px'}}
                             required
                         />

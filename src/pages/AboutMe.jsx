@@ -22,29 +22,37 @@ const AboutMe = () => {
     }, [titles.length])
     
     return (
-        <Grid container spacing={2} id='about-me'>
-            <Grid item>
-                <Typography variant='h3'>
+        <Grid container
+            spacing={2}
+            id='about-me'
+            sx={{
+                marginTop: 3
+            }}
+        >
+            <Grid item xs={8}>
+                <Typography variant='h3' sx={{ marginTop:  6 }}>
                     Juan Sebastián Samboni
                 </Typography>
                 <Typography variant='h4'>
                     {titles[currentText]}
                 </Typography>
-            </Grid>
-            <Grid item>
-                <img src={ProfileImg} alt='profile_photo' style={{ width: '100px', height: '100px', borderRadius: '50%'}} />
-            </Grid>
-            <Typography variant='subtitle1'>
-                ¡Hola! Soy Juan Sebastián, desarrollador web y analista de 24 años, apasionado por la creación de interfaces dinámicas y la robustez del back-end.
-                <Link to='my-stack'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration= {500}
+                <Typography variant='subtitle1'
+                    sx={{ marginTop: 4}}
                 >
-                    Conoce más!
-                </Link>
-            </Typography>
+                    ¡Hola! Soy Juan Sebastián, desarrollador web y analista de 24 años, apasionado por la creación de interfaces dinámicas y la robustez del back-end.
+                    <Link to='my-stack'
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration= {500}
+                    >
+                        Conoce más.
+                    </Link>
+                </Typography>
+            </Grid>
+            <Grid item xs={4}>
+                <img src={ProfileImg} alt='profile_photo' style={{ width: '250px', height: '250px', borderRadius: '50%'}} />
+            </Grid>
         </Grid>
     )
 }

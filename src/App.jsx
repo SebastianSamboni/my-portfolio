@@ -14,7 +14,7 @@ function App() {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <NavBar />
-            <Box component="main" sx={{ flexGrow: 1, p: 6 }}>
+            <Box component="main" sx={{ flexGrow: 1, p: 10 }}>
                 <Container>
                     <AboutMe />
                     <StackList />
