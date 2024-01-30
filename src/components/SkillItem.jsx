@@ -15,12 +15,12 @@ const SkillItem = ({ skillName, skillLogo, percentage}) => {
                     text: { fill:  '#007bff', fontSize: '16px' },
                 }}
             />
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center', marginTop: '10px' }}>
                 <img src={skillLogo}
                     alt={skillName}
                     style={{
-                        width: '50px',
-                        height: '50px'
+                        width: '45px',
+                        height: '45px'
                     }}
                 />
                 <Typography variant='h6'

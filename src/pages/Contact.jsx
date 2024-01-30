@@ -26,11 +26,13 @@ const Contact = () => {
     return (
         <Container id='contact'>
             <Typography variant='h4' textAlign='center'>
-                Ponte en Contacto!
+                Contáctame
             </Typography>
             <form method='POST'
                 action='https://formspree.io/f/xayrqkbr'
-                onSubmit={handleSubmit}>
+                onSubmit={handleSubmit}
+                style={{ marginTop:  20 }}
+            >
                 <Grid container spacing={2}>
                     <Grid item md={6}>
                         <TextField id='name'
@@ -74,15 +76,28 @@ const Contact = () => {
                             minRows={3}
                             name='description'
                             maxRows={10}
-                            placeholder='Escribe tu pregunta!'
-                            style={{ resize: 'none', width: '100%', height: '150px'}}
+                            placeholder='Escribe tu pregunta'
+                            style={{
+                                resize: 'none',
+                                width: '100%',
+                                height: '150px',
+                                fontSize: '18px',
+                                borderRadius: '5px',
+                                fontFamily: `'Roboto', sans-serif`,
+                                padding: 6
+                            }}
                             required
                         />
                     </Grid>
-                    <Grid item md={12}>
+                    <Grid item md={12} textAlign='center'>
                         <Button type='submit'
                             variant='contained'
                             fullWidth
+                            sx={{
+                                backgroundColor: '#009688',
+                                height: 50,
+                                width: '75%'
+                            }}
                         >
                             Enviar
                         </Button>

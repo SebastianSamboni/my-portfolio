@@ -21,7 +21,9 @@ const NavBar = () => {
                 flexShrink: 0,
                 '& .MuiDrawer-paper': {
                     width: drawerWidth,
-                    boxSizing: 'border-box'
+                    boxSizing: 'border-box',
+                    backgroundColor: '#009688',
+                    color: '#fff'
                 }
             }}
             variant='permanent'
@@ -52,7 +54,7 @@ const NavBar = () => {
             <Divider />
             <List sx={{marginTop: '80px'}}>
                 <ListItem>
-                    <a href={`${process.env.PUBLIC_URL}/CV_mine.pdf`} download
+                    <a href={`${process.env.PUBLIC_URL}/CV_SebastianSamboni.pdf`} download
                         style={{
                             textDecoration: 'none'
                         }}

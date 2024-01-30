@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <Container id='projects'>
             <Typography variant='h4' textAlign='center'>
-                Mi Stack de Tecnologías
+                Mis Proyectos
             </Typography>
             <Grid container spacing={2}>
                 {projects.map((project, index) => (
