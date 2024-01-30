@@ -5,11 +5,8 @@ const InfoCard = ({ timeWorked, company, jobTitle, responsabilities, index }) =>
     return (
         <Card
             style={{
-                maxWidth: 400,
                 width: '100%',
-                marginBottom: 20,
-                marginLeft: index % 2 === 1 ? 'auto' : 0,
-                marginRight: index % 2 === 0 ? 'auto' : 0
+                marginTop: 10
             }}
         >
             <CardContent>

@@ -54,7 +54,7 @@ const NavBar = () => {
             <Divider />
             <List sx={{marginTop: '80px'}}>
                 <ListItem>
-                    <a href={`${process.env.PUBLIC_URL}/CV_mine.pdf`} download
+                    <a href={`${process.env.PUBLIC_URL}/CV_SebastianSamboni.pdf`} download
                         style={{
                             textDecoration: 'none'
                         }}

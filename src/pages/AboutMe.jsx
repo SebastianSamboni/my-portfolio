@@ -8,7 +8,7 @@ const AboutMe = () => {
     const titles = [
         'Desarrollador Web',
         'Analista de Sistemas',
-        'Diseñador amateur'
+        'Diseñador Amateur'
     ]
 
     useEffect(() => {        

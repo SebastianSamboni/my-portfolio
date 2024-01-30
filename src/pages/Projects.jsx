@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard'
 
 const Projects = () => {
     return (
-        <Container id='projects' sx={{ marginTop: 10}}>
+        <Container id='projects'>
             <Typography variant='h4' textAlign='center'>
                 Mis Proyectos
             </Typography>
